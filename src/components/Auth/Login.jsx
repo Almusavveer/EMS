@@ -1,9 +1,15 @@
 // import React from 'react'
 // This is a Login component
 // It is a form with email and password fields
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { getLocalStorage, setLocalStorage } from '../../Utils/localStorage'
 
 const Login = () => {
+
+    useEffect(() => {
+        // setLocalStorage()
+        getLocalStorage()
+    })
 
     // State for email and password
     // Default values are empty strings
