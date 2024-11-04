@@ -1,8 +1,16 @@
 // import React from 'react'
 
+import AllTask from "../others/AllTask"
+import CreateTask from "../others/CreateTask"
+import Header from "../others/header"
+
 const AdminDashboard = () => {
   return (
-    <div>AdminDashboard</div>
+    <div className="h-screen w-full p-10">
+      <Header />
+      <CreateTask />
+      <AllTask  />
+    </div>
   )
 }
 
