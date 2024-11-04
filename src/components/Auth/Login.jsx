@@ -4,12 +4,12 @@
 import { useEffect, useState } from 'react'
 import { getLocalStorage, setLocalStorage } from '../../Utils/localStorage'
 
-const Login = () => {
+const Login = ({handleLogin}) => {
 
-    useEffect(() => {
-        // setLocalStorage()
-        getLocalStorage()
-    })
+    // useEffect(() => {
+    //     setLocalStorage()
+    //     getLocalStorage()
+    // })
 
     // State for email and password
     // Default values are empty strings
@@ -20,6 +20,7 @@ const Login = () => {
     const submitHandler = (e) => {
         // Prevent default form submission
         e.preventDefault()
+        handleLogin(email, password)
         // Log the email and password
         setEmail('')
         setPassword('')
