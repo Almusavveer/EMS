@@ -10,6 +10,9 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+gitignore
+vite.config.js
+eslint.config.js
 *.local
 
 # Editor directories and files
