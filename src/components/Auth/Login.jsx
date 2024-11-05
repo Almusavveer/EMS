@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 // import React from 'react'
 // This is a Login component
 // It is a form with email and password fields
